@@ -1,0 +1,7 @@
+/contracts.iml
+/.idea/
+/node/
+/node_modules/
+/logs/
+/target/
+/src/main/webapp/static/app/
