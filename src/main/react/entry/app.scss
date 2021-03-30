@@ -1,0 +1,48 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-datepicker/dist/css/bootstrap-datepicker.css';
+@import "@fortawesome/fontawesome-free/css/fontawesome.css";
+@import "@fortawesome/fontawesome-free/css/brands.css";
+@import "@fortawesome/fontawesome-free/css/regular.css";
+@import "@fortawesome/fontawesome-free/css/solid.css";
+
+.content-wrapper {
+    padding: 30px;
+}
+.content-wrapper .table thead th {
+    border: none;
+    background: #eee5d3;
+}
+.content-wrapper .table tbody tr.active td {
+    background: #aee3b9;
+    color: #165a17;
+}
+.content-wrapper .btn-group .btn, .content-wrapper .btn {
+    background: #fcfcfc;
+    border: 1px solid #dddddd;
+}
+.content-wrapper .btn-group .btn:active,
+.content-wrapper .btn-group .btn:hover,
+.content-wrapper .btn:active,
+.content-wrapper .btn:hover {
+    box-shadow: none;
+    background: #e7e7e7;
+}
+.content-wrapper .btn-group .btn:focus,
+.content-wrapper .btn:focus {
+    box-shadow: none;
+}
+.container {
+    margin-top: 30px;
+    padding: 15px;
+    display: none
+}
+.container.show {
+    display: block;
+}
+.formCreate {
+
+}
+.incorrect {
+    border: 1px solid #ff0000;
+    background-color: rgba(255,55,55,0.1);
+}

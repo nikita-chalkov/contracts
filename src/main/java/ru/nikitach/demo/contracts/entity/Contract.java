@@ -13,7 +13,7 @@ import java.sql.Date;
 @Table(name = "Contracts")
 public class Contract {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Integer id;
 
@@ -43,7 +43,13 @@ public class Contract {
     private Double bonus;
 
     @Column(name = "contract_number", length = 6, nullable = false)
-    private Integer contractNumber;
+    private String contractNumber;
+
+    @Column(name = "date_conclusion", nullable = false)
+    private Date dateConclusion;
+
+    @Transient
+    private Integer calc;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "insurant")
@@ -52,7 +58,7 @@ public class Contract {
     @Column(name = "country", nullable = false)
     private String country;
 
-    @Column(name = "index")
+    @Column(name = "`index`")
     private String index;
 
     @Column(name = "region", nullable = false)

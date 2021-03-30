@@ -12,7 +12,7 @@ import java.sql.Date;
 @Table(name = "Clients")
 public class Client {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Integer id;
 
@@ -28,11 +28,11 @@ public class Client {
     @Column(name = "birth_date", nullable = false)
     private Date birthDate;
 
-    @Column(name = "pasport_number", nullable = false)
-    private Integer pasportNumber;
+    @Column(name = "pasport_number")
+    private String pasportNumber;
 
-    @Column(name = "pasport_series", nullable = false)
-    private Integer pasportSeries;
+    @Column(name = "pasport_series")
+    private String pasportSeries;
 
     public Client(){}
 }
