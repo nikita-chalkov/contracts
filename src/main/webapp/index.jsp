@@ -14,7 +14,7 @@
     visibility: hidden;
     opacity: 0;
 }
-.wrapper.preload>.preloader {
+.wrapper>.preloader {
     position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -98,12 +98,12 @@
 
 </head>
 <body>
-<div class="wrapper preload">
+<div class="wrapper preload" id="wrapper">
     <div class="preloader">
         <div class="preloader-content">
             <div class="preloader-title">...</div>
             <div class="preloader-progress">
-                <div style="transition-duration: 1000ms; width: 0%;"></div>
+                <div id="progress-line" style="transition-duration: 1000ms; width: 0%;"></div>
             </div>
         </div>
     </div>
